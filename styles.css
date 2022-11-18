@@ -15,11 +15,11 @@ body{
     align-items: center;
     padding: 5px 35px;
     box-shadow: 5px 5px 5px rgb(241,229,241);
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1;
+    z-index: 10;
 }
 .nav-left{
     display: flex;
@@ -37,14 +37,15 @@ body{
 }
 .nav-right a{
     padding: 10px;
-    font-weight: 400;
+    font-size: 20px;
+    font-weight: 500;
     color: white;
     text-decoration: transparent;
     transition: 1s ease-in-out, .5s ease-in-out;
 }
 .nav-right a:hover{
-    color: darkred;
-    font-weight: 600;
+    color: crimson;
+    font-weight: 700;
     text-shadow: 1px,1px,20px cyan;
     text-decoration: underline;
     text-underline-offset: 10px;
@@ -55,7 +56,7 @@ body{
     /* z-index: -1; */
     position: absolute;
     width: 100%;
-    height: 500px;
+    height: 540px;
     left: 0px;
     top: 0px;
 }
@@ -65,11 +66,13 @@ body{
 }
 .div-left h1{
     position: absolute;
-    color: white;
+    /* color: white; */
     width: 446px;
     height: 113px;
-    left: 102px;
-    top: 150px;
+    left: 0px;
+    top: 0px;
+    white-space: nowrap;
+    color: transparent;
 
     font-family: 'Roboto';
     font-style: normal;
@@ -77,14 +80,91 @@ body{
     font-size: 96px;
     line-height: 112px;
 }
-.div-left material-icons-outlined{
+.div-left h1::before{
+    content: "Snow Fest";
     position: absolute;
-    left: 147px;
-    /* right: 90.97%; */
-    top: 280px;
-    /* bottom: 87.63%; */
-    background: #FFF9F9;
+    width: 446px;
+    height: 113px;
+    left: 102px;
+    top: 182px;
+    color: #FFFFFF;
+    animation: typing 8s linear infinite;
 }
+@keyframes typing{
+    0%{
+        content: "|";
+    }
+    7%{
+        content: "S|";
+    }
+    13%{
+        content: "Sn|";
+    }
+    18%{
+        content: "Sno|";
+    }
+    24%{
+        content: "Snow|";
+    }
+    30%{
+        content: "Snow |";
+    }
+    36%{
+        content: "Snow F|";
+    }
+    42%{
+        content: "Snow Fe|";
+    }
+    48%{
+        content: "Snow Fes|";
+    }
+    54%{
+        content: "Snow Fest|";
+    }
+    60%{
+        content: "Snow Fest";
+    }
+    63%{
+        content: "Snow Fest|";
+    }
+    65%{
+        content: "Snow Fes|";
+    }
+    68%{
+        content:"Snow Fe|";
+    }
+    72%{
+        content: "Snow F|";
+    }
+    75%{
+        content: "Snow |";
+    }
+    78%{
+        content: "Snow|";
+    }
+    82%{
+        content: "Sno|";
+    }
+    85%{
+        content: "S|";
+    }
+    88%{
+        content: "|";
+    }
+    92%{
+        content: "";
+    }
+    95%{
+        content: "|";
+    }
+    98%{
+        content: "";
+    }
+    100%{
+        content: "|";
+    }
+}
+
 .div-left span h5{
     position: absolute;
     width: 388px;
@@ -196,7 +276,7 @@ border-radius: 50px;
 width: 365px;
 height: 85px;
 left: 113px;
-top: 782px;
+top: 582px;
 
 font-family: 'Inter';
 font-style: normal;
@@ -208,4 +288,268 @@ color: #000000;
 }
 .about h1 span{
     color: cornflowerblue;
+}
+.about-left{
+    position: absolute;
+width: 466px;
+height: 242px;
+left: 105px;
+top: 871px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 35px;
+text-align: justify;
+
+color: #000000;
+
+}
+.about-right .img7{
+    position: absolute;
+width: 300px;
+height: 200px;
+left: 850px;
+top: 890px;
+}
+.about-right .img6{
+    position: absolute;
+width: 300px;
+height: 200px;
+left: 665px;
+top: 800px;
+}
+.about-right .img5{
+    position: absolute;
+width: 290px;
+height: 200px;
+left: 914px;
+top: 708px;
+}
+.booking h1{
+    position: absolute;
+width: 511px;
+height: 85px;
+left: 425px;
+top: 1200px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 70px;
+line-height: 85px;
+color: #000000;
+}
+.booking span{
+    color: cornflowerblue;
+}
+.booking img{
+    position: absolute;
+width: 100%;
+height: 700px;
+left: 0px;
+top: 1330px;
+}
+.book .book1{
+    position: absolute;
+width: 600px;
+height: 60px;
+left: 325px;
+top: 1379px;
+z-index: 5;
+
+background: #FFFFFF;
+border: 2px solid #C4C4C4;
+border-radius: 20px;
+}
+.book .book2{
+    position: absolute;
+width: 600px;
+height: 60px;
+left: 325px;
+top: 1479px;
+z-index: 5;
+
+background: #FFFFFF;
+border: 2px solid #C4C4C4;
+border-radius: 20px;
+}
+.book .book3{
+    position: absolute;
+width: 600px;
+height: 60px;
+left: 325px;
+top: 1579px;
+z-index: 5;
+
+background: #FFFFFF;
+border: 2px solid #C4C4C4;
+border-radius: 20px;
+}
+.book .book4{
+    position: absolute;
+width: 600px;
+height: 60px;
+left: 325px;
+top: 1679px;
+z-index: 5;
+
+background: #FFFFFF;
+border: 2px solid #C4C4C4;
+border-radius: 20px;
+}
+.calc .headd{
+    position: absolute;
+width: 164px;
+height: 42px;
+left: 342px;
+top: 1800px;
+z-index: 5;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 36px;
+line-height: 42px;
+
+color: #000000;
+}
+.calc .uk{
+    box-sizing: border-box;
+
+position: absolute;
+width: 352px;
+height: 70px;
+left: 341px;
+top: 1850px;
+
+background: #E7E7E7;
+border: 1px solid #000000;
+border-radius: 10px;
+}
+.calc .btn1{
+    position: absolute;
+width: 66px;
+height: 68px;
+left: 750px;
+top: 1850px;
+
+background: #FFFFFF;
+border: 2px solid #C4C4C4;
+border-radius: 20px;
+}
+.calc .btn2{
+    position: absolute;
+width: 66px;
+height: 68px;
+left: 870px;
+top: 1850px;
+
+background: #FFFFFF;
+border: 2px solid #C4C4C4;
+border-radius: 20px;
+}
+.calc .value{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 840px;
+    top: 1865px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: justify;
+    
+    color: #000000;
+}
+.calc .final{
+    position: absolute;
+width: 200px;
+height: 50px;
+left: 540px;
+top: 1950px;
+cursor: pointer;
+background: #FFC700;
+border-radius: 20px;
+}
+.footer{
+    position: absolute;
+width: 100%;
+height: 280px;
+left: 0px;
+top: 2030px;
+background: rgba(0, 0, 0, 0.8);
+}
+.footer .final_img{
+    position: absolute;
+width: 166px;
+height: 165px;
+left: 60px;
+top: 75px;
+}
+.footer .final_txt{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 260px;
+    top: 85px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 35px;
+    text-align: justify;
+    
+    color: white;
+}
+.footer .identity{
+    position: absolute;
+width: 300px;
+height: 28px;
+left: 915px;
+top: 240px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 380;
+font-size: 22px;
+line-height: 33px;
+color: #FFC700;
+}
+.footer .cont{
+    position: absolute;
+    width: 90px;
+    height: 110px;
+    left: 560px;
+    top: 10px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 35px;
+    text-align: justify;
+    
+    color: white;
+}
+.footer .cont2{
+    position: absolute;
+    width: 90px;
+    height: 110px;
+    left: 660px;
+    top: 10px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 35px;
+    text-align: justify;
+    
+    color: white;
 }
